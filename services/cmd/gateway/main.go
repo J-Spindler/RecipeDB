@@ -24,7 +24,7 @@ func main() {
 
 	gateway.InitializeRoutes(r, db)
 
-	err = r.Run(":8080")
+	err = r.Run("0.0.0.0:8080")
 	if err != nil {
 		panic("Error starting server")
 	}
